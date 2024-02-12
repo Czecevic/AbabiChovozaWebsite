@@ -24,11 +24,14 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+  background: url("../assets/BébéPochetteAlbum.png");
+  background-position: top;
 }
 
-main {
+/* main {
   background: url("../assets/BébéPochetteAlbum.png");
-}
+  background-position: top;
+} */
 
 @layer utilities {
   .text-balance {
