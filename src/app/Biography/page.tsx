@@ -33,12 +33,12 @@ export default function Biography() {
     <div className=" text-slate-950 flex items-center flex-col gap-10 text-center text-2xl">
       <Link href={"/"} className="absolute left-0">
         <button className="transition-all rounded-lg p-4 text-md bg-slate-50 text-black hover:bg-slate-950 hover:text-white">
-          retourner à la page d'acceuil
+          retourner à la page d&#39;acceuil
         </button>
       </Link>
       <Image src={logo} alt="logo"></Image>
       <h1 className=" text-5xl backdrop-blur-md w-full p-10">
-        L'histoire d'une tortue
+        L&#39;histoire d&#39;une tortue
       </h1>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -56,7 +56,7 @@ export default function Biography() {
       <h1 className=" text-5xl backdrop-blur-md w-full p-10">
         La discographie
       </h1>
-      <div className="flex w-full justify-around mb-10">
+      <div className="flex w-full justify-around mb-10 flex-wrap">
         {tabOfAlbum.map((album, index) => {
           return (
             <div className="flex flex-col items-center" key={index}>
