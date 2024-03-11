@@ -31,15 +31,14 @@ export default function Biography() {
   ];
   return (
     <div className=" text-slate-950 flex items-center flex-col gap-10 text-center text-2xl">
-      <Link href={"/"} className="absolute left-0">
-        <button className="transition-all rounded-lg p-4 text-md bg-slate-50 text-black hover:bg-slate-950 hover:text-white">
-          retourner à la page d&#39;acceuil
-        </button>
+      <Link href={"/"} className="p-10">
+        <Image
+          src={logo}
+          alt="logo"
+          className=" transition-all hover:invert"
+        ></Image>
       </Link>
-      <Image src={logo} alt="logo"></Image>
-      <h1 className=" text-5xl backdrop-blur-md w-full p-10">
-        L&#39;histoire d&#39;une tortue
-      </h1>
+      <h1 className=" text-5xl backdrop-blur-md w-full p-10">L&#39;histoire</h1>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim

@@ -1,13 +1,20 @@
 import Link from "next/link";
+import Image from "next/image";
+import logo from "@/assets/logo_v2.png";
+import { MiniaYoutube } from "./components/MiniaYoutube";
 
 export default function Song() {
   return (
-    <div>
-      <Link href={"/"} className="absolute left-0">
-        <button className="transition-all rounded-lg p-4 text-md bg-slate-50 text-black hover:bg-slate-950 hover:text-white">
-          retourner à la page d&#39;acceuil
-        </button>
+    <div className="flex flex-col items-center">
+      <Link href={"/"} className="p-10">
+        <Image
+          src={logo}
+          alt="logo"
+          className=" transition-all hover:invert"
+        ></Image>
       </Link>
+      <div className="w-4/5 border-2 border-gray-950"></div>
+      <MiniaYoutube />
     </div>
   );
 }

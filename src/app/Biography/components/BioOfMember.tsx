@@ -17,7 +17,7 @@ export const BioOfMember = ({ tabOfSrc }) => {
     <div className="flex justify-around w-full flex-wrap">
       {tabOfSrc.map((src: string, index: number) => {
         return (
-          <div key={index}>
+          <div key={index} className="cursor-pointer">
             {isOpenArray[index] ? (
               <div>
                 {index === 0 && (
@@ -25,7 +25,7 @@ export const BioOfMember = ({ tabOfSrc }) => {
                     className=" absolute w-52 z-10 backdrop-blur-md text-white h-52 pt-12 pb-12 pl-5 pr-5"
                     onClick={() => toggleOpen(index)}
                   >
-                    guitariste / compositeur du groupe
+                    guitariste du groupe
                   </p>
                 )}
                 {index === 1 && (
